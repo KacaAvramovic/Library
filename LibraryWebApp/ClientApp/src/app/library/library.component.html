@@ -1,0 +1,44 @@
+<h1 id="tableLabel">Books</h1>
+
+<p>Books we own.</p>
+
+<p *ngIf="!books"><em>Loading...</em></p>
+
+<button class="btn btn-primary" (click)="addBook()">Add book</button>
+
+<br />
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="books">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Genre</th>
+      <th>Author</th>
+      <th>Modified</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.id }}</td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.description }}</td>
+      <td>{{ book.genre.name }}</td>
+      <td>{{ book.author.name }}</td>
+      <td>{{ book.modifiedUtc | date:'medium' }}</td>
+      <td>
+        <img src="assets/svg/edit.svg" (click)="editBook(book.id)" width="20" height="20">
+      </td>
+      <td>
+        <img src="assets/svg/trash.svg" (click)="deleteBook(book.id)" width="20" height="20">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<label id="error">{{ error }}</label>
+<br />

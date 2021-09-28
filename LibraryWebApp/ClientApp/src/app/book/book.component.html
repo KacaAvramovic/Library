@@ -1,0 +1,43 @@
+<div >
+
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+
+    <br />
+
+    <label for="title">Title: </label>  <br />
+    <input id="title" type="text" formControlName="title">
+
+    <br />
+
+
+    <div formGroupName="author">
+      <label for="author">Author: </label>  <br />
+      <select class="select" (change)="changeAuthor($event.target.value)" formControlName="id">
+        <option value="" disabled>Choose author</option>
+        <option value="{{author.id}}" *ngFor="let author of authors">{{author.name}}</option>
+      </select>
+    </div>
+
+    <br />
+
+    <div formGroupName="genre">
+      <label for="genre">Genre: </label>  <br />
+      <select class="select" (change)="changeGenre($event.target.value)" formControlName="id">
+        <option value="" disabled>Choose genre</option>
+        <option value="{{genre.id}}" *ngFor="let genre of genres">{{genre.name}}</option>
+      </select>
+    </div>
+
+    <br />
+
+    <label for="description">Description: </label>  <br />
+    <input id="description" type="text" formControlName="description" size="100">
+
+    <br />
+
+    <label id="error">{{ error }}</label>  <br />
+    <button type="submit" [disabled]="!bookForm.valid">Submit</button>
+
+    <button (click)="cancel($event)">Cancel</button>
+  </form>
+  </div>

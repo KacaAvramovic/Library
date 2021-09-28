@@ -1,0 +1,12 @@
+C:\Users\rs-katavra-01\source\repos\Library\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\rs-katavra-01\source\repos\Library\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\rs-katavra-01\source\repos\Library\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\rs-katavra-01\source\repos\Library\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\rs-katavra-01\source\repos\Library\Domain\obj\Debug\net5.0\Domain.pdb
